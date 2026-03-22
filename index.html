@@ -963,7 +963,7 @@ function renderOverview() {
   const sumEl=document.getElementById('ov-summary');
   const wd=weekData();
   grid.innerHTML='';
-  const ovPillars=PILLARS.filter(p=>p.id!=='fitness');
+  const ovPillars=PILLARS; // all pillars including Mind & Body
   const ovDays=[0,1,2,3,4,5,6];
   ovPillars.forEach(p=>{
     const col=document.createElement('div');
