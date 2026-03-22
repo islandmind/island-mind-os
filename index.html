@@ -369,7 +369,7 @@ body {
 
 <div class="masthead">
   <div class="mast-rule"></div>
-  <div class="mast-eye">Captain's Log &mdash; Daily Station</div>
+  <div class="mast-eye">Captain's Log &mdash; Daily Entry</div>
   <div class="mast-title">ISLAND MIND OS</div>
   <div class="mast-sub">Every pillar moves. Every week.</div>
   <div class="mast-rule"></div>
@@ -964,7 +964,7 @@ function renderOverview() {
   const wd=weekData();
   grid.innerHTML='';
   const ovPillars=PILLARS.filter(p=>p.id!=='fitness');
-  const ovDays=[1,2,3,4,5,6];
+  const ovDays=[0,1,2,3,4,5,6];
   ovPillars.forEach(p=>{
     const col=document.createElement('div');
     col.className='ov-col';
