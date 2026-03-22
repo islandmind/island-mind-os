@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<!-- saved from url=(0043)file:///C:/Users/merde/Downloads/index.html -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
+<html lang="en">
+<head>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#0e0a04">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="Island Mind OS">
-<link rel="manifest" href="file:///C:/Users/merde/Downloads/manifest.json">
+<link rel="manifest" href="manifest.json">
 <title>Island Mind Daily OS</title>
-<link href="./Island Mind Daily OS_files/css2" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400;1,600&family=Courier+Prime:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 <style>
 :root {
   --parch: #f0e6ce;
@@ -369,7 +369,7 @@ body {
 
 <div class="masthead">
   <div class="mast-rule"></div>
-  <div class="mast-eye">Captain's Log — Daily Station</div>
+  <div class="mast-eye">Captain's Log &mdash; Daily Station</div>
   <div class="mast-title">ISLAND MIND OS</div>
   <div class="mast-sub">Every pillar moves. Every week.</div>
   <div class="mast-rule"></div>
@@ -386,26 +386,14 @@ body {
   </div>
   <div class="rank-right">
     <div class="rank-streak-label">Pillar Streaks</div>
-    <div class="rank-streaks" id="rank-streaks"><div class="streak-chip">· THP —</div><div class="streak-chip">· IMD —</div><div class="streak-chip">· IMX —</div><div class="streak-chip">· IMTC —</div><div class="streak-chip">· Mind+Body —</div></div>
+    <div class="rank-streaks" id="rank-streaks"></div>
   </div>
 </div>
 
-<div class="day-nav" id="day-nav"><div class="day-tab active is-today"><span class="tab-name">Sun</span><span class="tab-num">22</span><span class="tab-badge"></span><div class="tab-dots"></div></div><div class="day-tab"><span class="tab-name">Mon</span><span class="tab-num">23</span><span class="tab-badge">⚓ Anchor</span><div class="tab-dots"><div class="tab-dot "></div><div class="tab-dot "></div></div></div><div class="day-tab"><span class="tab-name">Tue</span><span class="tab-num">24</span><span class="tab-badge">🔨 IMD Day</span><div class="tab-dots"><div class="tab-dot "></div><div class="tab-dot "></div></div></div><div class="day-tab"><span class="tab-name">Wed</span><span class="tab-num">25</span><span class="tab-badge">🔨 IMD Day</span><div class="tab-dots"><div class="tab-dot "></div><div class="tab-dot "></div></div></div><div class="day-tab"><span class="tab-name">Thu</span><span class="tab-num">26</span><span class="tab-badge">🔨 IMD Day</span><div class="tab-dots"><div class="tab-dot "></div><div class="tab-dot "></div></div></div><div class="day-tab"><span class="tab-name">Fri</span><span class="tab-num">27</span><span class="tab-badge">🔨 IMD Day</span><div class="tab-dots"><div class="tab-dot "></div><div class="tab-dot "></div></div></div><div class="day-tab"><span class="tab-name">Sat</span><span class="tab-num">28</span><span class="tab-badge"></span><div class="tab-dots"><div class="tab-dot "></div></div></div></div>
+<div class="day-nav" id="day-nav"></div>
 
 <div class="card">
-  <div class="focus-band" id="focus-band">
-    <div>
-      <div class="fb-day-label">Today's Station</div>
-      <div class="fb-day-name">Sunday</div>
-      
-      
-      <div style="margin-top:6px"><span class="fb-badge" style="background:var(--ink-mid);color:var(--parch-mid);border:1px solid rgba(192,124,8,0.3);">☽ Rest Day</span></div>
-    </div>
-    <div class="fb-right">
-      <div class="fb-focus-label">Today's Focus</div>
-      <div class="fb-focus-name">Rest &amp; Recharge</div>
-      <div class="fb-focus-note">Rest Day — Recover &amp; Recharge</div>
-    </div></div>
+  <div class="focus-band" id="focus-band"></div>
   <div class="card-body">
     <div class="checkin">
       <div class="ci-label">Morning Intention</div>
@@ -419,57 +407,7 @@ body {
     </div>
     <div class="pillars-block">
       <div class="pillars-label">Archipelago Status</div>
-      <div class="pillars-row" id="pillars-row"><div class="p-chip">
-      <div class="p-chip-top">
-        <div class="p-chip-name">Tradewind House Partners</div>
-        
-      </div>
-      <div class="p-status">
-        <button class="p-btn " onclick="setSt(&#39;thp&#39;,&#39;green&#39;)">▪ Move</button>
-        <button class="p-btn " onclick="setSt(&#39;thp&#39;,&#39;yellow&#39;)">▪ Slow</button>
-        <button class="p-btn " onclick="setSt(&#39;thp&#39;,&#39;red&#39;)">▪ Stall</button>
-      </div>
-      <input class="p-next" type="text" placeholder="Next one thing..." value="" oninput="setNxt(&#39;thp&#39;,this.value)"></div><div class="p-chip">
-      <div class="p-chip-top">
-        <div class="p-chip-name">Island Mind Design</div>
-        
-      </div>
-      <div class="p-status">
-        <button class="p-btn " onclick="setSt(&#39;imd&#39;,&#39;green&#39;)">▪ Move</button>
-        <button class="p-btn " onclick="setSt(&#39;imd&#39;,&#39;yellow&#39;)">▪ Slow</button>
-        <button class="p-btn " onclick="setSt(&#39;imd&#39;,&#39;red&#39;)">▪ Stall</button>
-      </div>
-      <input class="p-next" type="text" placeholder="Next one thing..." value="" oninput="setNxt(&#39;imd&#39;,this.value)"></div><div class="p-chip">
-      <div class="p-chip-top">
-        <div class="p-chip-name">Expedition (IMX)</div>
-        
-      </div>
-      <div class="p-status">
-        <button class="p-btn " onclick="setSt(&#39;imx&#39;,&#39;green&#39;)">▪ Move</button>
-        <button class="p-btn " onclick="setSt(&#39;imx&#39;,&#39;yellow&#39;)">▪ Slow</button>
-        <button class="p-btn " onclick="setSt(&#39;imx&#39;,&#39;red&#39;)">▪ Stall</button>
-      </div>
-      <input class="p-next" type="text" placeholder="Next one thing..." value="" oninput="setNxt(&#39;imx&#39;,this.value)"></div><div class="p-chip">
-      <div class="p-chip-top">
-        <div class="p-chip-name">Trading Co.</div>
-        
-      </div>
-      <div class="p-status">
-        <button class="p-btn " onclick="setSt(&#39;imtc&#39;,&#39;green&#39;)">▪ Move</button>
-        <button class="p-btn " onclick="setSt(&#39;imtc&#39;,&#39;yellow&#39;)">▪ Slow</button>
-        <button class="p-btn " onclick="setSt(&#39;imtc&#39;,&#39;red&#39;)">▪ Stall</button>
-      </div>
-      <input class="p-next" type="text" placeholder="Next one thing..." value="" oninput="setNxt(&#39;imtc&#39;,this.value)"></div><div class="p-chip">
-      <div class="p-chip-top">
-        <div class="p-chip-name">Mind &amp; Body</div>
-        
-      </div>
-      <div class="p-status">
-        <button class="p-btn " onclick="setSt(&#39;fitness&#39;,&#39;green&#39;)">▪ Move</button>
-        <button class="p-btn " onclick="setSt(&#39;fitness&#39;,&#39;yellow&#39;)">▪ Slow</button>
-        <button class="p-btn " onclick="setSt(&#39;fitness&#39;,&#39;red&#39;)">▪ Stall</button>
-      </div>
-      <input class="p-next" type="text" placeholder="Next one thing..." value="" oninput="setNxt(&#39;fitness&#39;,this.value)"></div></div>
+      <div class="pillars-row" id="pillars-row"></div>
     </div>
   </div>
   <div class="card-footer">
@@ -483,11 +421,8 @@ body {
 
 <div class="overview">
   <div class="ov-title">Weekly Archipelago — At a Glance</div>
-  <div class="ov-grid" id="ov-grid"><div class="ov-col"><div class="ov-col-name">THP</div><div class="ov-dots"><div class="ov-dot " title="Mon"></div><div class="ov-dot " title="Tue"></div><div class="ov-dot " title="Wed"></div><div class="ov-dot " title="Thu"></div><div class="ov-dot " title="Fri"></div><div class="ov-dot " title="Sat"></div></div></div><div class="ov-col"><div class="ov-col-name">IMD</div><div class="ov-dots"><div class="ov-dot " title="Mon"></div><div class="ov-dot " title="Tue"></div><div class="ov-dot " title="Wed"></div><div class="ov-dot " title="Thu"></div><div class="ov-dot " title="Fri"></div><div class="ov-dot " title="Sat"></div></div></div><div class="ov-col"><div class="ov-col-name">IMX</div><div class="ov-dots"><div class="ov-dot " title="Mon"></div><div class="ov-dot " title="Tue"></div><div class="ov-dot " title="Wed"></div><div class="ov-dot " title="Thu"></div><div class="ov-dot " title="Fri"></div><div class="ov-dot " title="Sat"></div></div></div><div class="ov-col"><div class="ov-col-name">IMTC</div><div class="ov-dots"><div class="ov-dot " title="Mon"></div><div class="ov-dot " title="Tue"></div><div class="ov-dot " title="Wed"></div><div class="ov-dot " title="Thu"></div><div class="ov-dot " title="Fri"></div><div class="ov-dot " title="Sat"></div></div></div></div>
-  <div class="ov-summary" id="ov-summary">
-    <div class="ov-stat"><div class="ov-num green">0</div><div class="ov-lbl">Moving</div></div>
-    <div class="ov-stat"><div class="ov-num yellow">0</div><div class="ov-lbl">Slow</div></div>
-    <div class="ov-stat"><div class="ov-num red">0</div><div class="ov-lbl">Stalled</div></div></div>
+  <div class="ov-grid" id="ov-grid"></div>
+  <div class="ov-summary" id="ov-summary"></div>
 </div>
 
 <script>
@@ -980,7 +915,7 @@ function renderFocusBand() {
   const display=cfg.restDay?'Rest & Recharge':focusNames.length>0?focusNames.join('<br>+ '):'Mind & Body';
   document.getElementById('focus-band').innerHTML=`
     <div>
-      <div class="fb-day-label">Today's Station</div>
+      <div class="fb-day-label">Today's Destination</div>
       <div class="fb-day-name">${cfg.label}</div>
       ${cfg.anchor?'<div style="margin-top:6px"><span class="fb-badge anchor">⚓ Deep Work Anchor</span></div>':''}
       ${cfg.imdDay?'<div style="margin-top:6px"><span class="fb-badge imd">🔨 IMD Active — Flex Evening</span></div>':''}
@@ -989,7 +924,6 @@ function renderFocusBand() {
     <div class="fb-right">
       <div class="fb-focus-label">Today's Focus</div>
       <div class="fb-focus-name">${display}</div>
-      <div class="fb-focus-note">${cfg.note}</div>
     </div>`;
 }
 
@@ -1052,7 +986,7 @@ function renderOverview() {
 function setSt(pid,status) {
   const dd=dayData(currentDay);
   dd.pillars[pid].status=dd.pillars[pid].status===status?null:status;
-  persist(); render();
+  persist(); render(); renderOverview(); renderRank(); renderVoyage();
 }
 function setNxt(pid,val) { dayData(currentDay).pillars[pid].next=val; persist(); }
 function saveDay() {
@@ -1129,7 +1063,7 @@ if(document.readyState === 'loading') {
 
 <div class="voyage-panel" id="voyage-panel">
   <div class="voyage-canvas-wrap">
-    <canvas class="voyage-canvas" id="voyage-canvas" width="838" height="160"></canvas>
+    <canvas class="voyage-canvas" id="voyage-canvas"></canvas>
     <div class="voyage-overlay">
       <div class="voyage-left">
         <div class="voyage-status-label">Voyage Status</div>
@@ -1145,9 +1079,9 @@ if(document.readyState === 'loading') {
     </div>
   </div>
   <div class="xp-bar-wrap">
-    <span class="xp-bar-label" id="xp-rank-from">Deck Hand</span>
+    <span class="xp-bar-label" id="xp-rank-from"></span>
     <div class="xp-bar-track"><div class="xp-bar-fill" id="xp-bar-fill" style="width:0%"></div></div>
-    <span class="xp-bar-next" id="xp-rank-to">→ Able Seaman (100 XP)</span>
+    <span class="xp-bar-next" id="xp-rank-to"></span>
   </div>
 </div>
 
@@ -1156,11 +1090,10 @@ if(document.readyState === 'loading') {
   <div class="backup-btns">
     <span class="backup-msg" id="backup-msg"></span>
     <button class="backup-btn" onclick="exportData()">Export Log</button>
-    <button class="backup-btn imp" onclick="document.getElementById(&#39;import-file&#39;).click()">Import Log</button>
+    <button class="backup-btn imp" onclick="document.getElementById('import-file').click()">Import Log</button>
     <input type="file" id="import-file" accept=".json" onchange="importData(event)">
   </div>
 </div>
 
-
-
-</body></html>
+</body>
+</html>
